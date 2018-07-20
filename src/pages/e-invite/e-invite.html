@@ -1,0 +1,48 @@
+<!--
+  Generated template for the EInvitePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Canvas Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <canvas id="my-canvas" class="canvas" width="500" height="500" style="border:1px solid #ccc;" ></canvas>
+</ion-content>
+
+<ion-footer no-border>
+  <!-- Text Formatting -->
+  <ion-toolbar id="bottom-toolbar" [ngClass]="{'show': showTextToolBar, 'hide': !showTextToolBar }">
+    <ion-buttons left>
+        <button color="dark" ion-button icon-only (click)="alert('cool')"><ion-icon name="trash"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons right>
+        <button color="dark" ion-button icon-only (click)="alert(5)"><ion-icon style="font-size: 0.25em;" name="radio-button-on"></ion-icon></button>
+        <button color="dark" ion-button icon-only (click)="alert(10)"><ion-icon style="font-size: 0.5em;" name="radio-button-on"></ion-icon></button>
+        <button color="dark" ion-button icon-only (click)="alert(20)"><ion-icon style="font-size: 1em;" name="radio-button-on"></ion-icon></button>
+        <button color="dark" ion-button icon-only (click)="alert(50)"><ion-icon style="font-size: 2em;" name="radio-button-on"></ion-icon></button>
+        <button color="dark" ion-button icon-only (click)="alert(200)"><ion-icon style="font-size: 3em;" name="radio-button-on"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Text Formatting -->
+  <ion-toolbar id="bottom-toolbar" [ngClass]="{'show': showTextToolBar, 'hide': !showTextToolBar }">
+      <ion-buttons left>
+          <button color="dark" ion-button icon-only (click)="alert('cool')"><ion-icon name="trash"></ion-icon></button>
+      </ion-buttons>
+      <ion-buttons right>
+          <button color="dark" ion-button icon-only (click)="alert(5)"><ion-icon style="font-size: 0.25em;" name="radio-button-on"></ion-icon></button>
+          <button color="dark" ion-button icon-only (click)="alert(10)"><ion-icon style="font-size: 0.5em;" name="radio-button-on"></ion-icon></button>
+          <button color="dark" ion-button icon-only (click)="alert(20)"><ion-icon style="font-size: 1em;" name="radio-button-on"></ion-icon></button>
+          <button color="dark" ion-button icon-only (click)="alert(50)"><ion-icon style="font-size: 2em;" name="radio-button-on"></ion-icon></button>
+          <button color="dark" ion-button icon-only (click)="alert(200)"><ion-icon style="font-size: 3em;" name="radio-button-on"></ion-icon></button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

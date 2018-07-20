@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Featured Free E-Invites
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+    <ion-item *ngFor="let template of templates" text-center>
+      <img class="template-preview" [src]="template.preview" (click)="selectTemplate(template)" />
+      <h3 class="template-name">{{ template.name }}</h3>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
